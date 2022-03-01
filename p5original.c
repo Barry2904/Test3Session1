@@ -18,13 +18,13 @@ void input_array(int n,int a[n])
 int find_largest(int n,int a[n])
 {
   int i,temp=0;
-  for(i=0;i<n-1;i++)
+  for(i=0;i<n;i++)
   {
-    if(a[temp]>a[temp+1])
+    if(a[temp]>a[i+1])
     {
       temp=temp;
     }
-    else if(a[temp+1]>a[temp])
+    else if(a[i+1]>a[temp])
     {
       temp=temp+1;
     }
