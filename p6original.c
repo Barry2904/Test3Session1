@@ -23,9 +23,9 @@ void output(char *a, int no_words)
 int main()
 {
   int n;
-  char a,string;
-  input_string(&a);
-  n=count_words(&a);
-  output(&a,n);
+  char a[100],string[100];
+  input_string(a);
+  n=count_words(a);
+  output(a,n);
   return 0;
 }
