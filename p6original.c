@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void input_string(char *a)
+void input_string(char *a)//char *a or char a[]
 {
   printf("Enter a line of text:-\n");
   fgets(a,100,stdin);
