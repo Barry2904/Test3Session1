@@ -1,27 +1,33 @@
 #include<stdio.h>
-int input_degree(){
+int input_degree()
+{
     int n;
     printf("Enter the degree of the polynoial\n");
     scanf("%d",&n);
     return n;
 }
-float input_x(){
+float input_x()
+{
     float x;
     printf("Enter the value of x\n");
     scanf("%f",&x); 
     return x;       
 }
-void input_coefficients(int n,float a[n]){
+void input_coefficients(int n,float a[n])
+{
     int i;
-    for( i=0;i<=n;i++){
+    for(i=0;i<=n;i++)
+    {
         printf("Enter the %d coefficients of x\n",i+1);
         scanf("%f",&a[i]);
     }
 }
-float evaluate_polynomial(int n, float a[n], float x){
+float evaluate_polynomial(int n, float a[n], float x)
+{
     float temp1=0,temp2,result,temp3;
     temp1=temp1+a[0];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++)
+    {
         temp2=temp1*x;
         temp3=a[i+1]+temp2;
         temp1=temp3;
